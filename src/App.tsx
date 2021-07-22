@@ -19,13 +19,6 @@ const ChinaDns = [
     new doh.DohResolver("https://dns.alidns.com/dns-query")
 ]
 
-// const CleanBrowsing = new doh.DohResolver("https://doh.cleanbrowsing.org/doh/security-filter/")
-// const Comss = new doh.DohResolver("https://dns.east.comss.one/dns-query")
-// const Snopyta = new doh.DohResolver("https://fi.doh.dns.snopyta.org/dns-query")
-/// const Oszx = new doh.DohResolver("https://dns.oszx.co/dns-query")
-/// const DohSb = new doh.DohResolver("https://doh.dns.sb/dns-query")
-// const DnsForge = new doh.DohResolver("https://dnsforge.de/dns-query")
-
 const OtherDns = [
     new doh.DohResolver("https://dns.233py.com/dns-query"),
     new doh.DohResolver("https://dns.google/dns-query"),
@@ -44,7 +37,7 @@ const OtherDns = [
 
 const hostMap = new Map<string, [boolean, string[]]>([
     ["download.sangfor.com.cn", [false, [
-        "trial.dlsite.com", "img.dlsite.jp", "media.dlsite.com", "play.dl.dlsite.com", "media.ci-en.jp",
+        "trial.dlsite.com", "img.dlsite.jp", "media.dlsite.com", "media.ci-en.jp",
         "media.stg.ci-en.jp", "file.chobit.cc", "img.chobit.cc"
     ]]],
     ["download.dlsite.com.wtxcdn.com", [false, [
@@ -54,7 +47,8 @@ const hostMap = new Map<string, [boolean, string[]]>([
         "ssl.dlsite.com", "www.dlsite.com", "www.nijiyome.com", "www.nijiyome.jp", "download.dlsite.com"
     ]]],
     ["j.sni.global.fastly.net", [false, [
-        "ssl.dlsite.com", "www.dlsite.com", "www.nijiyome.com", "www.nijiyome.jp", "download.dlsite.com"
+        "ssl.dlsite.com", "www.dlsite.com", "www.nijiyome.com", "www.nijiyome.jp", "download.dlsite.com",
+        "play.dl.dlsite.com"
     ]]],
     ["play.dlsite.com", [true, [
         "play.dlsite.com"
